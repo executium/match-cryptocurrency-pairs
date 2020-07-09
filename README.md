@@ -4,7 +4,6 @@
 
 - [General Information](#general-information)
 	- [Useful affiliated repositories](#userful-affiliated-repositories)
-
 - [HTTP Return Codes](#http-return-codes)
 - [Error Codes](#error-codes)
 - [API Information](#api-information)

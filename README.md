@@ -1,3 +1,5 @@
+![pair matching engine](https://i.imgur.com/Ha52Lf1.jpg)
+
 # Pair Matching Engine: Discover where you can trade a pair
 
 **Table of Contents**
@@ -7,6 +9,9 @@
 - [HTTP Return Codes](#http-return-codes)
 - [Error Codes](#error-codes)
 - [API Information](#api-information)
+	- [Match Pair](#match-pair) (public/match-pair)
+	- [Symbols](#symbols) (system/symbols)
+
 
 
 ## General Information

@@ -54,13 +54,13 @@ As follows is a run down of advisiable and accessible `endpoints` for usage for 
 
 
 #### Match Pair
-This system is provided to give insight into a `pairing` and where you can also trade it. For this endpoint we accept both `POST` and `GET`. An example of `GET` would be `https://marketdata.executium.com/api/v2/public/match-pair?code=binance-btcusdt`. Please review [Symbols Supported](#symbols-supported) (system/symbols) for more information about pairs.
+This system is provided to give insight into a `pairing` and where you can also trade it. For this endpoint we accept both `POST` and `GET`. An example of `GET` would be `https://marketdata.executium.com/api/v2/public/match-pair?code=btcusdt`. Please review [Symbols Supported](#symbols-supported) (system/symbols) for more information about pairs.
 
 **Example scenario**
 You are looking to find who else support BTCUSDT, the same way Binance do. You would run the following query:
 
 ```
-GET https://marketdata.executium.com/api/v2/public/match-pair?code=binance-btcusdt
+GET https://marketdata.executium.com/api/v2/public/match-pair?code=btcusdt
 ```
 
 The output of that query would be as follows:
@@ -77,7 +77,7 @@ POST /api/v2/public/match-pair
 **Parameters:**
 Name | MinLength | Required | Default | Description
 ------------ | ------------ | ------------ | ------------ | ------------
-code | 1 | YES |  | Provide a pair such as `binance-btcusdt` to discover where else you can trade the pairing `btcusdt`. We require you to indicate the excutium `code` for best results.
+code | 1 | YES |  | Provide a pair such as `btcusdt` to discover where else you can trade the pairing `btcusdt`. Exclude the exchange code from your query and request just the pair like shown.
 
 #### Symbols Supported
 All symbols listed and supported on executium. This `endpoint` also accepts `GET`, you can filter the data using the `exchange` parameter, for example `GET /api/v2/system/symbols?exchange=bifinex`.

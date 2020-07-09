@@ -66,6 +66,29 @@ GET https://marketdata.executium.com/api/v2/public/match-pair?code=btcusdt
 The output of that query would be as follows:
 
 ```javascript
+{
+  "data": {
+    "pair": "btcusdt",
+    "count": 14,
+    "active": [
+      "Binance",
+      "Bitfinex",
+      "Bitmart",
+      "Bitmax",
+      "Bittrex",
+      "Ftx",
+      "Gateio",
+      "Huobipro",
+      "Kraken",
+      "Kucoin",
+      "Liquid",
+      "Okex",
+      "Poloniex",
+      "Upbit"
+    ],
+    "possible_combinations": 196
+  }
+}
 ```
 
 This tells us everywhere which supports `BTCUSDT` and where we can trade. 

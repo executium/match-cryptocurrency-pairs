@@ -390,7 +390,7 @@ The idea is that you can pull the publicly accessible `endpoints` and create inf
 ## Demo
 ![demo](https://i.imgur.com/HvZaVXF.jpg)
 
-You can [find the match pairs demo here](https://marketdata.executium.com/demo/). This provides a real-time look at data being returned. It also provides a look at symbol and feteching symbol prices.
+You can [find the match pairs demo here](https://marketdata.executium.com/match-pair-demo/). This provides a real-time look at data being returned. It also provides a look at symbol and feteching symbol prices.
 
 ## Exchanges supported
 We currently support `24` pairs as of the 9th July 2020. You can learn more about the support we currently have at our [exchanges-support.md](https://github.com/executium/api-version-2/blob/master/exchanges-supported.md) which is kept up to date more regular.

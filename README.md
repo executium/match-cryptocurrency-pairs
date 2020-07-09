@@ -1,4 +1,4 @@
-![pair matching engine](https://i.imgur.com/Ha52Lf1.jpg)
+![pair matching engine](https://i.imgur.com/TEqW8SK.jpg)
 
 # Pair Matching Engine: Discover where you can trade a pair
 

@@ -86,9 +86,143 @@ The output of that query would be as follows:
       "Poloniex",
       "Upbit"
     ],
+    "detail": {
+      "binance": {
+        "id": "btcusdt",
+        "symbol": "BTC/USDT",
+        "quote": "USDT",
+        "base": "BTC",
+        "min": 0.01,
+        "pp": 2,
+        "pa": 6
+      },
+      "bitfinex": {
+        "id": "btcusdt",
+        "symbol": "BTC/USDT",
+        "quote": "UST",
+        "base": "BTC",
+        "min": 0.000009999999999999999,
+        "pp": 5,
+        "pa": -1
+      },
+      "bitmart": {
+        "id": "btcusdt",
+        "symbol": "BTC/USDT",
+        "quote": "USDT",
+        "base": "BTC",
+        "min": -1,
+        "pp": 2,
+        "pa": 5
+      },
+      "bitmax": {
+        "id": "btcusdt",
+        "symbol": "BTC/USDT",
+        "quote": "USDT",
+        "base": "BTC",
+        "pp": 9,
+        "pa": 5
+      },
+      "bittrex": {
+        "id": "btcusdt",
+        "symbol": "BTC/USDT",
+        "quote": "USDT",
+        "base": "BTC",
+        "min": 1e-8,
+        "pp": 8,
+        "pa": 8
+      },
+      "ftx": {
+        "id": "btcusdt",
+        "symbol": "BTC/USDT",
+        "quote": "USDT",
+        "base": "BTC",
+        "min": 0.5,
+        "pp": 0.5,
+        "pa": 0.0001
+      },
+      "gateio": {
+        "id": "btcusdt",
+        "symbol": "BTC/USDT",
+        "quote": "usdt",
+        "base": "btc",
+        "min": 0.01,
+        "pp": 2,
+        "pa": 8
+      },
+      "huobipro": {
+        "id": "btcusdt",
+        "symbol": "BTC/USDT",
+        "quote": "usdt",
+        "base": "btc",
+        "min": 0.01,
+        "pp": 2,
+        "pa": 6
+      },
+      "kraken": {
+        "id": "btcusdt",
+        "symbol": "BTC/USDT",
+        "quote": "USDT",
+        "base": "XXBT",
+        "min": 0.1,
+        "pp": 1,
+        "pa": 8
+      },
+      "kucoin": {
+        "id": "btcusdt",
+        "symbol": "BTC/USDT",
+        "quote": "USDT",
+        "base": "BTC",
+        "min": 0.1,
+        "pp": 1,
+        "pa": 8
+      },
+      "liquid": {
+        "id": "btcusdt",
+        "symbol": "BTC/USDT",
+        "quote": "USDT",
+        "base": "BTC",
+        "min": 0.000001,
+        "pp": 6,
+        "pa": 8
+      },
+      "okex": {
+        "id": "btcusdt",
+        "symbol": "BTC/USDT",
+        "quote": "USDT",
+        "base": "BTC",
+        "min": 0.1,
+        "pp": 0.1,
+        "pa": 1e-8
+      },
+      "poloniex": {
+        "id": "btcusdt",
+        "symbol": "BTC/USDT",
+        "quote": "USDT",
+        "base": "BTC",
+        "min": 1e-8,
+        "pp": 8,
+        "pa": 8
+      },
+      "upbit": {
+        "id": "btcusdt",
+        "symbol": "BTC/USDT",
+        "quote": "USDT",
+        "base": "BTC",
+        "min": 1e-8,
+        "pp": 8,
+        "pa": 8
+      }
+    },
     "possible_combinations": 196
+  },
+  "meta": {
+    "api_version": 2,
+    ...
+    ...
+    ...
   }
 }
+
 ```
 
 This tells us everywhere which supports `BTCUSDT` and where we can trade. 

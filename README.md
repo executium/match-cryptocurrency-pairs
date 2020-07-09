@@ -301,7 +301,7 @@ exchange |  | NO |  | Filter the data by exchange.
 ```
 
 ### Fetch Symbol Price
-Public API but restrictions apply based on your subscription level. You must provide the exact `symbol` code which executium provides. You can review symbols in the `system/symbols` endpoint. For this endpoint we accept both `POST` and `GET`. An example of `GET` would be `https://marketdata.executium.com/api/v2/public/fetch-symbol-price?code=binance-btcusdt&side=asks&level=1`.
+Public API but restrictions apply based on your subscription level. You must provide the exact `symbol` code which executium provides. You can review symbols in the `system/symbols` endpoint. For this endpoint we accept both `POST` and `GET`. An example of `GET` would be `https://marketdata.executium.com/api/v2/public/fetch-symbol-price?code=binance-btcusdt`.
 
 ```
 POST /api/v2/public/fetch-symbol-price
@@ -311,9 +311,38 @@ POST /api/v2/public/fetch-symbol-price
 Name | MinLength | Required | Default | Description
 ------------ | ------------ | ------------ | ------------ | ------------
 code |  | YES |  | The executium code, which can be found at [exchanges-supported.md](./exchanges-supported.md) or by calling the endpoint `system/symbols`. This endpoint can taken multiple inputs and is comma delimited. For example you could input `binance-btcusdt,bitfinex-tnbbtc,bitfinex-btcusd`. To a maximum of 10 inputs.
-side |  | YES |  | Choice: 'asks' or 'bids'; If you input 'buy' it will show 'asks'; If you input 'sell' it will show 'bids'; No other inputs will be accepted. Single input.
-level |  | YES | 1 | The orderbook level, from 1 to 10. Single input.
 
+**Successful response payload**
+
+```
+  "data": {
+    "binance-btcusdt": {
+      "bids": {
+        "price": 9410.77,
+        "qty": 2.25,
+        "time": 1594277489758
+      },
+      "asks": {
+        "price": 9411.6,
+        "qty": 0.009037,
+        "time": 1594277489759
+      }
+    },
+    "bitfinex-btcusdt": {
+      "bids": {
+        "price": 9407.1,
+        "qty": 0.05118678,
+        "time": 1594277489695
+      },
+      "asks": {
+        "price": 9411.8,
+        "qty": 0.010091,
+        "time": 1594277478643
+      }
+    },
+    "notes": "Refresh rate 1000-1500ms; To adjust please review your subscription."
+  },
+```
 
 ## What can I do with this?
 The idea is that you can pull the publicly accessible `endpoints` and create informative projects around it. For example, you could mix the symbols with the prices available at each exchange by doing the following:
@@ -324,6 +353,9 @@ The idea is that you can pull the publicly accessible `endpoints` and create inf
 4. Map the polled data to corresponding symbols.
 
 ## Demo
+![demo](https://i.imgur.com/HvZaVXF.jpg)
+
+You can [find the match pairs demo here](https://marketdata.executium.com/demo/). This provides a real-time look at data being returned. It also provides a look at symbol and feteching symbol prices.
 
 ## Exchanges supported
 We currently support `24` pairs as of the 9th July 2020. You can learn more about the support we currently have at our [exchanges-support.md](https://github.com/executium/api-version-2/blob/master/exchanges-supported.md) which is kept up to date more regular.

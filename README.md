@@ -14,7 +14,7 @@
 	- [Fetch Symbol Price](#fetch-symbol-price) (public/fetch-symbol-price)
 - [What can I do with this?](#what-can-i-do-with-this)
 - [Demo](#demo)
-- [Exchanges supported](#exhcanges-supported)
+- [Exchanges supported](#exchanges-supported)
 
 ## General Information
 This repository concentrates on the `endpoint` `POST /api/v2/public/match-pair` designed to provide advice and inspiration for where you can trade specific pairs. The method is of particular use if you are planning to arbitrage a specific pair. This repository is provided as a standalone focused project. It is part of the executium REST API version 2.
@@ -23,6 +23,8 @@ This repository concentrates on the `endpoint` `POST /api/v2/public/match-pair` 
 * All endpoints return either a JSON object or array.
 * Data returned is limited according to subscription.
 * Timestamp fields vary and are labeled to their corresponding contents of **milliseconds** or **time**
+
+![pairs](https://i.imgur.com/UBvbsK9.png)
 
 #### Useful affiliated repositories
 

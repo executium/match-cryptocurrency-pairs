@@ -70,158 +70,191 @@ The output of that query would be as follows:
 ```javascript
 {
   "data": {
-    "pair": "btcusdt",
-    "count": 14,
-    "active": [
-      "Binance",
-      "Bitfinex",
-      "Bitmart",
-      "Bitmax",
-      "Bittrex",
-      "Ftx",
-      "Gateio",
-      "Huobipro",
-      "Kraken",
-      "Kucoin",
-      "Liquid",
-      "Okex",
-      "Poloniex",
-      "Upbit"
-    ],
-    "detail": {
-      "binance": {
-        "id": "btcusdt",
-        "symbol": "BTC/USDT",
-        "quote": "USDT",
-        "base": "BTC",
-        "min": 0.01,
-        "pp": 2,
-        "pa": 6
+    "BTCUSDT": {
+      "pair": "btcusdt",
+      "count": 14,
+      "active": [
+        "Binance",
+        "Bitfinex",
+        "Bitmart",
+        "Bitmax",
+        "Bittrex",
+        "Ftx",
+        "Gateio",
+        "Huobipro",
+        "Kraken",
+        "Kucoin",
+        "Liquid",
+        "Okex",
+        "Poloniex",
+        "Upbit"
+      ],
+      "detail": {
+        "binance": {
+          "id": "btcusdt",
+          "symbol": "BTC/USDT",
+          "quote": "USDT",
+          "base": "BTC",
+          "min": 0.01,
+          "pp": 2,
+          "pa": 6
+        },
+        "bitfinex": {
+          "id": "btcusdt",
+          "symbol": "BTC/USDT",
+          "quote": "UST",
+          "base": "BTC",
+          "min": 0.000009999999999999999,
+          "pp": 5,
+          "pa": -1
+        },
+        "bitmart": {
+          "id": "btcusdt",
+          "symbol": "BTC/USDT",
+          "quote": "USDT",
+          "base": "BTC",
+          "min": -1,
+          "pp": 2,
+          "pa": 5
+        },
+        "bitmax": {
+          "id": "btcusdt",
+          "symbol": "BTC/USDT",
+          "quote": "USDT",
+          "base": "BTC",
+          "pp": 9,
+          "pa": 5
+        },
+        "bittrex": {
+          "id": "btcusdt",
+          "symbol": "BTC/USDT",
+          "quote": "USDT",
+          "base": "BTC",
+          "min": 1e-8,
+          "pp": 8,
+          "pa": 8
+        },
+        "ftx": {
+          "id": "btcusdt",
+          "symbol": "BTC/USDT",
+          "quote": "USDT",
+          "base": "BTC",
+          "min": 0.5,
+          "pp": 0.5,
+          "pa": 0.0001
+        },
+        "gateio": {
+          "id": "btcusdt",
+          "symbol": "BTC/USDT",
+          "quote": "usdt",
+          "base": "btc",
+          "min": 0.01,
+          "pp": 2,
+          "pa": 8
+        },
+        "huobipro": {
+          "id": "btcusdt",
+          "symbol": "BTC/USDT",
+          "quote": "usdt",
+          "base": "btc",
+          "min": 0.01,
+          "pp": 2,
+          "pa": 6
+        },
+        "kraken": {
+          "id": "btcusdt",
+          "symbol": "BTC/USDT",
+          "quote": "USDT",
+          "base": "XXBT",
+          "min": 0.1,
+          "pp": 1,
+          "pa": 8
+        },
+        "kucoin": {
+          "id": "btcusdt",
+          "symbol": "BTC/USDT",
+          "quote": "USDT",
+          "base": "BTC",
+          "min": 0.1,
+          "pp": 1,
+          "pa": 8
+        },
+        "liquid": {
+          "id": "btcusdt",
+          "symbol": "BTC/USDT",
+          "quote": "USDT",
+          "base": "BTC",
+          "min": 0.000001,
+          "pp": 6,
+          "pa": 8
+        },
+        "okex": {
+          "id": "btcusdt",
+          "symbol": "BTC/USDT",
+          "quote": "USDT",
+          "base": "BTC",
+          "min": 0.1,
+          "pp": 0.1,
+          "pa": 1e-8
+        },
+        "poloniex": {
+          "id": "btcusdt",
+          "symbol": "BTC/USDT",
+          "quote": "USDT",
+          "base": "BTC",
+          "min": 1e-8,
+          "pp": 8,
+          "pa": 8
+        },
+        "upbit": {
+          "id": "btcusdt",
+          "symbol": "BTC/USDT",
+          "quote": "USDT",
+          "base": "BTC",
+          "min": 1e-8,
+          "pp": 8,
+          "pa": 8
+        }
       },
-      "bitfinex": {
-        "id": "btcusdt",
-        "symbol": "BTC/USDT",
-        "quote": "UST",
-        "base": "BTC",
-        "min": 0.000009999999999999999,
-        "pp": 5,
-        "pa": -1
-      },
-      "bitmart": {
-        "id": "btcusdt",
-        "symbol": "BTC/USDT",
-        "quote": "USDT",
-        "base": "BTC",
-        "min": -1,
-        "pp": 2,
-        "pa": 5
-      },
-      "bitmax": {
-        "id": "btcusdt",
-        "symbol": "BTC/USDT",
-        "quote": "USDT",
-        "base": "BTC",
-        "pp": 9,
-        "pa": 5
-      },
-      "bittrex": {
-        "id": "btcusdt",
-        "symbol": "BTC/USDT",
-        "quote": "USDT",
-        "base": "BTC",
-        "min": 1e-8,
-        "pp": 8,
-        "pa": 8
-      },
-      "ftx": {
-        "id": "btcusdt",
-        "symbol": "BTC/USDT",
-        "quote": "USDT",
-        "base": "BTC",
-        "min": 0.5,
-        "pp": 0.5,
-        "pa": 0.0001
-      },
-      "gateio": {
-        "id": "btcusdt",
-        "symbol": "BTC/USDT",
-        "quote": "usdt",
-        "base": "btc",
-        "min": 0.01,
-        "pp": 2,
-        "pa": 8
-      },
-      "huobipro": {
-        "id": "btcusdt",
-        "symbol": "BTC/USDT",
-        "quote": "usdt",
-        "base": "btc",
-        "min": 0.01,
-        "pp": 2,
-        "pa": 6
-      },
-      "kraken": {
-        "id": "btcusdt",
-        "symbol": "BTC/USDT",
-        "quote": "USDT",
-        "base": "XXBT",
-        "min": 0.1,
-        "pp": 1,
-        "pa": 8
-      },
-      "kucoin": {
-        "id": "btcusdt",
-        "symbol": "BTC/USDT",
-        "quote": "USDT",
-        "base": "BTC",
-        "min": 0.1,
-        "pp": 1,
-        "pa": 8
-      },
-      "liquid": {
-        "id": "btcusdt",
-        "symbol": "BTC/USDT",
-        "quote": "USDT",
-        "base": "BTC",
-        "min": 0.000001,
-        "pp": 6,
-        "pa": 8
-      },
-      "okex": {
-        "id": "btcusdt",
-        "symbol": "BTC/USDT",
-        "quote": "USDT",
-        "base": "BTC",
-        "min": 0.1,
-        "pp": 0.1,
-        "pa": 1e-8
-      },
-      "poloniex": {
-        "id": "btcusdt",
-        "symbol": "BTC/USDT",
-        "quote": "USDT",
-        "base": "BTC",
-        "min": 1e-8,
-        "pp": 8,
-        "pa": 8
-      },
-      "upbit": {
-        "id": "btcusdt",
-        "symbol": "BTC/USDT",
-        "quote": "USDT",
-        "base": "BTC",
-        "min": 1e-8,
-        "pp": 8,
-        "pa": 8
-      }
+      "possible_combinations": 196
     },
-    "possible_combinations": 196
-  },
-  "meta": {
-    "api_version": 2,
-    ...
-    ...
-    ...
+    "ETHBTC": {
+      "pair": "ethbtc",
+      "count": 18,
+      "active": [
+        "Binance",
+        "Bitfinex",
+        "Bitflyer",
+        "Bitmart",
+        "Bitmax",
+        "Bitstamp",
+        "Bittrex",
+        "Coinbasepro",
+        "Ftx",
+        "Gateio",
+        "Huobipro",
+        "Indodax",
+        "Kraken",
+        "Kucoin",
+        "Liquid",
+        "Okex",
+        "Poloniex",
+        "Upbit"
+      ],
+      "detail": {
+        "binance": {
+          "id": "ethbtc",
+          "symbol": "ETH/BTC",
+          "quote": "BTC",
+          "base": "ETH",
+          "min": 0.000001,
+          "pp": 6,
+          "pa": 3
+        },
+	...
+	...
+	...
+
   }
 }
 

@@ -85,7 +85,179 @@ function print_r(json)
 
 <!---
 
-Example of output
+Example of output:
+
+Sat Jul 11 2020 13:45:04 GMT+0700 (Indochina Time)
+URL: https://marketdata.executium.com/api/v2/public/match-pair?code=btcusdt
+Interval: 10000ms
+
+{
+  "data": {
+    "BTCUSDT": {
+      "pair": "btcusdt",
+      "count": 14,
+      "active": [
+        "Binance",
+        "Bitfinex",
+        "Bitmart",
+        "Bitmax",
+        "Bittrex",
+        "Ftx",
+        "Gateio",
+        "Huobipro",
+        "Kraken",
+        "Kucoin",
+        "Liquid",
+        "Okex",
+        "Poloniex",
+        "Upbit"
+      ],
+      "detail": {
+        "binance": {
+          "id": "btcusdt",
+          "symbol": "BTC/USDT",
+          "quote": "USDT",
+          "base": "BTC",
+          "min": 0.01,
+          "pp": 2,
+          "pa": 6
+        },
+        "bitfinex": {
+          "id": "btcusdt",
+          "symbol": "BTC/USDT",
+          "quote": "UST",
+          "base": "BTC",
+          "min": 0.000009999999999999999,
+          "pp": 5,
+          "pa": -1
+        },
+        "bitmart": {
+          "id": "btcusdt",
+          "symbol": "BTC/USDT",
+          "quote": "USDT",
+          "base": "BTC",
+          "min": -1,
+          "pp": 2,
+          "pa": 5
+        },
+        "bitmax": {
+          "id": "btcusdt",
+          "symbol": "BTC/USDT",
+          "quote": "USDT",
+          "base": "BTC",
+          "pp": 9,
+          "pa": 5
+        },
+        "bittrex": {
+          "id": "btcusdt",
+          "symbol": "BTC/USDT",
+          "quote": "USDT",
+          "base": "BTC",
+          "min": 1e-8,
+          "pp": 8,
+          "pa": 8
+        },
+        "ftx": {
+          "id": "btcusdt",
+          "symbol": "BTC/USDT",
+          "quote": "USDT",
+          "base": "BTC",
+          "min": 0.5,
+          "pp": 0.5,
+          "pa": 0.0001
+        },
+        "gateio": {
+          "id": "btcusdt",
+          "symbol": "BTC/USDT",
+          "quote": "usdt",
+          "base": "btc",
+          "min": 0.01,
+          "pp": 2,
+          "pa": 8
+        },
+        "huobipro": {
+          "id": "btcusdt",
+          "symbol": "BTC/USDT",
+          "quote": "usdt",
+          "base": "btc",
+          "min": 0.01,
+          "pp": 2,
+          "pa": 6
+        },
+        "kraken": {
+          "id": "btcusdt",
+          "symbol": "BTC/USDT",
+          "quote": "USDT",
+          "base": "XXBT",
+          "min": 0.1,
+          "pp": 1,
+          "pa": 8
+        },
+        "kucoin": {
+          "id": "btcusdt",
+          "symbol": "BTC/USDT",
+          "quote": "USDT",
+          "base": "BTC",
+          "min": 0.1,
+          "pp": 1,
+          "pa": 8
+        },
+        "liquid": {
+          "id": "btcusdt",
+          "symbol": "BTC/USDT",
+          "quote": "USDT",
+          "base": "BTC",
+          "min": 0.000001,
+          "pp": 6,
+          "pa": 8
+        },
+        "okex": {
+          "id": "btcusdt",
+          "symbol": "BTC/USDT",
+          "quote": "USDT",
+          "base": "BTC",
+          "min": 0.1,
+          "pp": 0.1,
+          "pa": 1e-8
+        },
+        "poloniex": {
+          "id": "btcusdt",
+          "symbol": "BTC/USDT",
+          "quote": "USDT",
+          "base": "BTC",
+          "min": 1e-8,
+          "pp": 8,
+          "pa": 8
+        },
+        "upbit": {
+          "id": "btcusdt",
+          "symbol": "BTC/USDT",
+          "quote": "USDT",
+          "base": "BTC",
+          "min": 1e-8,
+          "pp": 8,
+          "pa": 8
+        }
+      },
+      "possible_combinations": 196
+    }
+  },
+  "meta": {
+    "api_version": 2,
+    "reqid": "41877G46957T1594449904",
+    "system_version": "2.0.5",
+    "endpoint": "public/match-pair",
+    "status": 200,
+    "timezone": "UTC",
+    "request": "api/v2/public/match-pair",
+    "auth_required": false,
+    "ms": 1594449904352,
+    "time": 1594449904,
+    "process_time": 0.031023,
+    "process_full": 0.031661,
+    "requester": "<YOUR-IP>"
+  }
+}
 
 --->
 </body>

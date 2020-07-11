@@ -1,0 +1,92 @@
+<!---
+
+    /*
+    **
+    ** Test script to output results using jQuery 3.5.1 and setInterval()
+    ** Change `url` and `intervalMilliseconds`
+    ** This particular script does not really require polling as it rarely changes. However, it serves as a good example of how you can poll data.
+    **
+    **/
+
+--->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>body{font-family: Arial;}</style>
+    <script>url='https://marketdata.executium.com/api/v2/public/match-pair?code=btcusdt'; intervalMilliseconds=60000;</script>
+</head>
+<body>
+
+<h1></h1>
+<pre style="white-space: pre-wrap;" id="output"></pre>
+<script>
+
+setInterval(function()
+{
+    requestEndpoint(url);
+
+},intervalMilliseconds );
+
+function requestEndpoint(url)
+{
+    $.ajax
+    ({
+        type:"POST",
+        url:url,
+        data:'expand=true',
+        cache:false,
+        crossDomain: true,
+        xhrFields: { withCredentials: true},
+        timeout:6000,
+        error: function(data)
+        {
+            console.log('Error',data);
+        },
+        scriptCharset:"script",dataType:"",success:function(data)
+        {
+            console.log('Success',data);
+
+            $('#output').empty().html('<strong>'+new Date()+"</strong>\n<strong>URL: "+url+"</strong>\n<strong>Interval: "+intervalMilliseconds+"ms</strong>\n\n"+print_r(data));
+        }
+
+    });
+}
+
+requestEndpoint(url);
+
+
+function print_r(json)
+{
+    if (typeof json != 'string') {
+         json = JSON.stringify(json, undefined, 2);
+    }
+    json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function (match) {
+        var cls = 'number';
+        if (/^"/.test(match)) {
+            if (/:$/.test(match)) {
+                cls = 'key';
+            } else {
+                cls = 'string';
+            }
+        } else if (/true|false/.test(match)) {
+            cls = 'boolean';
+        } else if (/null/.test(match)) {
+            cls = 'null';
+        }
+        return '<span class="' + cls + '">' + match + '</span>';
+    });
+}
+
+
+</script>
+
+<!---
+
+Example of output
+
+--->
+</body>
+</html>
